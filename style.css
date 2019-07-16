@@ -1,0 +1,19 @@
+section,main {
+    display: flex;
+    justify-content: space-evenly;
+}
+section div, main div{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    
+}
+main{
+    border-top: white 50px solid;
+}
+.azul{
+    background-color: blue;
+}
+.vermelho{
+    background-color: red;
+}
