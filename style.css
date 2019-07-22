@@ -1,31 +1,49 @@
-body{
-    background-color: rgb(237, 243, 217);
-}    
-.jogo{
-    width: 800px;
-    height: 650px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: aquamarine;
+}
+
+#carta {
+    width: 640px;
+    height: 640px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    perspective: 1000px;
-    }
-.carta {
+}
+
+.memoria {
+    width: calc(25% - 10px);
+    height: 33%;
     margin: 5px;
-    position: relative;
     transform-style: preserve-3d;
-    transition: transform .5s;
-    }
-.carta:active{
-    transform: scale(0.50);
-    }
-.carta.virar {
+    transition: 0.3s;
+    position: relative;
+}
+
+.memoria:active {
+    transform: scale(0.97);
+}
+
+.memoria.flip {
     transform: rotateY(180deg);
-      }
-.frente{
+}
+
+.frente,
+.verso {
     width: 100%;
     height: 100%;
+    padding: 20px;
     position: absolute;
-    backface-visibility: hidden;
-    }
-    
- 
+    background: #91a7ee;
+}
+
+.frente {
+    transform: rotateY(180deg);
+}
