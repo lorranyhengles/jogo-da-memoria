@@ -1,12 +1,12 @@
 const carta = document.querySelector("#carta");
-const imagens = ['cat.png', 'dog.png', 'frog.png', 'giraffe.png', 'lion.png', 'pig.png'];
+const imagens = ['zebra.png', 'urs.png', 'raposa.png', 'baleia.png', 'tigre.png', 'pig.png'];
 let criarCartas = '';
 
 imagens.forEach(img => {
     criarCartas +=
         `<div class="memoria" data-card="${img}">
         <img class="frente" src="img/${img}">
-        <img class="verso" src="img/verso.png">
+        <img class="verso" src="img/fundo.png">
     </div>`
 });
 

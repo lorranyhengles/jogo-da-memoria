@@ -5,17 +5,34 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
-    background: aquamarine;
+    background: #0a0a0a;
 }
-
+section{
+    width: 100vh;
+    align-content: 
+}
+}
+/* h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    color: white; */
+}
+div{
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
 #carta {
-    width: 640px;
-    height: 640px;
-    margin: auto;
+    width: 840px;
+    height: 670px;
+    margin-left: 250px;
+    padding: 0;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .memoria {
@@ -39,9 +56,9 @@ body {
 .verso {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     position: absolute;
-    background: #91a7ee;
+    background: #05C7F2;
 }
 
 .frente {
